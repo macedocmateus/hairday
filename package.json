@@ -1,4 +1,7 @@
 {
+  "name": "hairday",
+  "description": "Sistema de agendamento para corte de cabelo",
+  "author": "Mateus de Castro Macedo",
   "scripts": {
     "server": "json-server --watch server.json --port 3333"
   },
