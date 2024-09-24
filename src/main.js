@@ -1,5 +1,8 @@
 'use strict';
 
+// Importação da configuração do dayjs
+import './libs/dayjs.js';
+
 // Css
 
 import './styles/global.css';
