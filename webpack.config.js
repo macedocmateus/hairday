@@ -1,4 +1,5 @@
 const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     target: 'web',
@@ -17,10 +18,13 @@ module.exports = {
         open: true,
         liveReload: true,
     },
-}
 
-
-
+    plugins: [
+        new htmlWebpackPlugin({
+            template: path.resolve(__dirname, 'index.html'),
+        }),
+    ],
+};
 
 // na notação moderna do js
 
