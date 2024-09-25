@@ -8,7 +8,7 @@ export function hoursLoad({date}) {
     const opening = openingHours.map((hour) => {
         // Recupera somente a hora
         const [scheduleHour] = hour.split(':')
-        console.log(scheduleHour);
+        
 
         // Adiciona a hora na data e verifica se está no passado para bloqueá-la
 
