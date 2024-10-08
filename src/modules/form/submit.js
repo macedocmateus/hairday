@@ -1,5 +1,5 @@
 import dayjs from 'dayjs'
-
+import { v4 as uuidv4 } from 'uuid';
 import {scheduleNew} from '../../services/schedule-new.js'
 import {schedulesDay} from '../schedules/load.js'
 
@@ -41,7 +41,8 @@ form.onsubmit = async(event) => {
         const when = dayjs(selectedDate.value).add(hour, 'hour')
         
         // Gera um ID
-        const id = new Date().getTime().toString()
+        //const id = new Date().getTime().toString()
+        const id = uuidv4()
 
         // Faz o agendamento, envia para api
         await scheduleNew({
